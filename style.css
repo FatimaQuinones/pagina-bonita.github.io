@@ -1,0 +1,234 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white-background);
+    font-family: 'Playfair Display', serif;
+}
+
+p{
+    font-size: 2vw;
+}
+
+ul {
+    font-size: 2vw;
+}
+li {
+    margin: 0 25px;
+}
+
+:root {
+    --obscure-brown: #3D2F2B;
+    --pressed-obscure-brown: #201816;
+    --white: #FFFF;
+    --white-background: #F6F3EE;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-background);
+    font-size: 18px !important;
+}
+
+a .selected {
+    font-weight: bold;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* Navbar style */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--obscure-brown);
+    color: var(--white);
+    width: auto;
+    height: 120px;
+    justify-content: space-between;
+    gap: 150px
+}
+
+.nav-bar i{
+    padding: 0 10px;
+    font-size: 40px;
+    
+}
+
+.nav-bar .nav-text{
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar .nav-text p{
+    font-size: 50px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.nav-bar .nav-text .page-links{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0px 20px;
+}
+
+/*Body style*/
+.body-page {
+    margin: 60px;
+}
+
+.big-brown-title {
+    color: var(--obscure-brown);
+    font-size: 4vw;
+    font-family: 'Playfair Display', serif;
+    margin: 20px 0;
+}
+
+/* index page clothes style */
+.images-clothes-display {
+    margin: 40px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image-clothes img{
+    width: 400px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.image-clothes p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--obscure-brown);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#title-clothes {
+    font-weight: normal;
+}
+
+/* Footer style */
+.footer-page{
+    background-color: var(--obscure-brown);
+    color: var(--white-background);
+    width: auto;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-page p{
+    background-color: transparent;
+    margin: 0 20px;
+    font-size: 20px;
+}
+.footer-icons {
+    margin: 0 20px;
+}
+.footer-icons i {
+    margin: 0 10px;
+    font-size: 40px;
+}
+
+/* Us style */
+.paragraph-image-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.paragraph-image-container p{
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    font-size: 1.8vw;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0 20px;
+    width: max-content;
+}
+
+.paragraph-image-container img{
+    width: 50%;
+    margin: 0 20px;
+}
+
+.image-with-background {
+    height: fit-content;
+    color: var(--white-background);
+    font-family: 'Playfair Display', serif;
+    background-image: url("./imagenes/nosotros2.png");
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-with-background p{
+  margin: 20px 50px;
+}
+
+.image-with-background h2{
+    margin-top: 30px;
+    font-size: 4vw;
+}
+
+/* Contact us style */
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-info+div {
+    display: flex;
+}
+
+.form-button {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin: 20px 0; 
+}
+
+.sugerence-textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.sugerence-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--obscure-brown);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.sugerence-button:hover {
+    background-color: var(--pressed-obscure-brown)
+}
+
+.sugerence-button:active {
+  background-color: var(--pressed-obscure-brown);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
